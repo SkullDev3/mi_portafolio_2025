@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio para encontrar trabajos">
+    <meta name="keywords" content="Portafolio, este es mi Portafolio, Portafolios, Portafolio de Beltran">
+    <meta name="author" content="Josshua Beltran Loayza"> 
+    <title>Portafolio | Josshua Beltran Loayza</title>
+    <link rel="icon" href="micara.jpg">  
+    <style>
+        body {
+            margin: 10px; 
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            color: #171717;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #1f2937;
+            color: white;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+        #cabezal:hover{
+            transform: scale(1.02);
+        }
+
+        #cabezal img{
+            border: 6px solid #1f2937;;
+            border-radius: 30px;
+            
+        }
+
+        #cabezal img:hover{
+            transform: scale(1.06);
+        }
+
+        #infodemi{
+            text-align: left;
+            padding: 20px 0;
+            background-color: #1f2937;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 30px;
+            margin-bottom: 30px;
+        }
+        /* Ejemplo 5*/
+        .grow{
+            flex-grow: 1;  /* Menos grow menos importancia*/
+        }
+        .grow2{
+            flex-grow: 3; /*Mas grow más importancia */
+        }
+
+        .flex-container{
+            display: flex;
+        }
+
+
+        .flex-item{
+            color: white;
+            padding: 15px;
+            margin: 5px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .grid-columns{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .grid-container{
+            display: grid;
+            background-color: #1f2937;
+            margin-bottom: 20px;
+            padding: 10px;
+            gap:10px /* Espacio entre elementos*/
+        }
+
+        .grid-item{
+            background-color: #f44b4b;
+            color: white;
+            padding: 9px;
+            text-align: center;
+            margin: 16px 0;  
+            border-radius: 30px;
+            border:3px solid black;
+        }
+        .grid-iteminfo{
+            background-color: #2563eb;
+            color: white;
+            padding: 9px;
+            text-align: center;
+            margin: 16px 0;  
+            border-radius: 30px;
+            border:3px solid black;
+        }
+        .grid-iteminfo:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .grid-item:hover{
+            transform: scale(1.06);
+        }
+        .grid-itemcontenido{
+            background-color: #374151;
+            color: #e5e7eb;
+            padding: 9px;
+            text-align: left;
+            margin: 16px 0;  
+            border-radius: 30px;
+            border:3px solid black;
+        }
+
+        .tituloempresa {
+            background-color: #1a3e89;
+            color: #e5e7eb;
+            padding: 3px;
+            text-align: center;
+            margin: 8px 0;  
+            border-radius: 30px;
+            border:3px solid black;
+        }
+
+        .tituloempresa:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1f2937;
+            color: white;
+            border-radius: 30px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="cabezal">
+        <header>
+            <div class="flex-container">
+                <div class="flex-item grow">
+                    <img src="micara.jpg" alt="Mi foto" width="300">
+                </div>
+                <div class="flex-item grow2">
+                    <h1>Josshua Elias Beltran Loayza</h1>
+                    <h2>Ingeniero Mecatrónico | Especialista en IA, Procesamiento de Imágenes y Desarrollo Web</h2>
+                    <div class="grid-container grid-columns">
+                        <div class="grid-item">Python</div>
+                        <div class="grid-item">Sql</div>
+                        <div class="grid-item">PHP</div>
+                        <div class="grid-item">Css</div>
+                        <div class="grid-item">Programación de PLC</div>
+                        <div class="grid-item">Machine Learning</div>
+                        <div class="grid-item">SolidWorks</div>
+                        <div class="grid-item">c++</div>
+                        <div class="grid-item">JavaScript</div>
+                        <div class="grid-item">EasyEda</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <section id="infodemi">
+        <div class="grid-iteminfo">
+            Sobre mí
+        </div>
+        <div class="grid-itemcontenido">
+            <p>Bachiller en Ingeniería Mecatrónica por la Universidad Continental, con experiencia en automatización, diseño mecánico y electrónico. He liderado proyectos innovadores como el robot educativo “Quwi” y el intérprete de lengua de señas con inteligencia artificial. Fui expositor en CONCYTEC 2024 y desarrollé soluciones mecatrónicas para instituciones universitarias. Tengo competencias en programación (Arduino, Python, PHP, SQL, HTML, CSS, JavaScript), diseño de PCBs, programación de PLCs, modelado CAD 3D y sistemas con inteligencia artificial. Reconocido en el top 10% de mi promoción y becario por alto rendimiento académico.</p>
+        </div>
+
+    </section>
+
+    <section id="infodemi">
+        <div class="grid-iteminfo">
+            Experiencia Profesional
+        </div>
+        <div class="grid-itemcontenido">
+            <div class="tituloempresa">
+                <h3>Makcromf Industries</h3>    
+            </div>
+            
+            <h3>Área de Inteligencia Artificial y Procesamiento de Imágenes</h3>
+            <h4>Enero 2025 - Junio 2025 | Huancayo, Perú</h4>
+            <ul>
+                <li>Desarrollé un sistema de reconocimiento facial con integración a Excel para la gestión de asistencia del personal</li>
+                <li>Implementé un sistema de seguimiento facial en tiempo real mediante servomotores para monitoreo inteligente</li>
+                <li>Desarrollé un lector OCR para texto con salida de voz artificial, mejorando la accesibilidad</li>
+                <li>Implementé un sistema de reconocimiento de objetos con inteligencia artificial para automatización de procesos internos</li>
+            </ul>
+        </div>
+
+        <div class="grid-itemcontenido">
+            <div class="tituloempresa">
+                <h3>CRAYOLA VISUAL</h3>
+            </div>
+
+            <h3>Área de Innovación Tecnológica | Practicante Pre Profesional | Lider del equipo de practicantes pre Profesionales</h3>
+            <h4>Marzo 2024 - Setiembre 2024 | Huancayo, Perú</h4>
+            <ul>
+                <li>Lideré el desarrollo del robot educativo “Quwi” para la enseñanza de programación a niños</li>
+                <li>Supervisé el diseño mecánico, integración electrónica y documentación técnica</li>
+                <li>Implementé metodologías educativas interactivas con Esp32</li>
+                <li>4to puesto nacional en Concurso de Patentes de la Universidad Continental</li>
+                <li>Proyecto destacado en la revista “Bitácora”</li>
+            </ul>
+        </div>
+
+        <div class="grid-itemcontenido">
+            <div class="tituloempresa">
+                <h3>ITC TECHNOLOGY SAC</h3>
+            </div>
+            <h3>Practicante Pre Profesional - Diseño y Manufactura Mecatrónica</h3>
+            <h4>Enero 2023 - Junio 2023 | Huancayo, Perú</h4>
+            <ul>
+                <li>Desarrollé un Data Logger para paneles solares para la UNCP sede Tarma</li>
+                <li>Diseñé un módulo seguidor solar con motores de elevación y azimut con código C++</li>
+                <li>Programé sistemas electrónicos con Arduino IDE y SolidWorks</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="infodemi">
+        <div class="grid-iteminfo">
+            Educación
+        </div>
+        <div class="grid-itemcontenido">
+            <ul>
+                <li>
+                    <h3>Universidad Continental</h3>
+                    <h4><strong>Bachiller en Ingeniería Mecatrónica (2020 - 2024)</strong> </h4>
+                    <h4>Top el mejor 10% | Becado 3 ciclos académicos | Ganador de la fería de Ingeniería 2 veces</h4>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>Icpna Región Centro</h3>
+                    <h4><strong>Nivel básico, intermedio y Avanzado(2016 - 2020)</strong> </h4>
+                    <h4>Certificado TOEFL | NIVEL B2</h4>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="infodemi">
+        <div class="grid-iteminfo">
+            Logros Destacados
+        </div>
+        <div class="grid-itemcontenido">
+            <ul>
+                <li>Primer puesto en la XVI Feria de Ingeniería Artículo Científico (2023)</li>
+                <li>Top 10 en Feria Internacional Kimen Innovación en Educación (2024)</li>
+                <li>Segundo puesto en ExpoPatenta Artículo Científico (2024)</li>
+                <li>Expositor en CONCYTEC 2024 con el proyecto "Intérprete de Lengua de Señas"</li>
+                <li>Entrevistado en la Revista Bitácora por el robot educativo “Quwi”</li>
+                <li>Décimo superior en Ingeniería Mecatrónica Universidad Continental</li>
+                <li>Becario por mérito académico durante tres ciclos consecutivos</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section id="infodemi">
+        <div class="grid-iteminfo">
+            Certificaciones
+        </div>
+        <div class="grid-itemcontenido">
+            <ul>
+                <li>Diseño de Circuitos Electrónicos y Sistemas Digitales: Universidad Continental</li>
+                <li>Diseño de Sistemas Mecatrónicos: Universidad Continental</li>
+                <li>Sistemas de Automatización y Control: Universidad Continental</li>
+                <li>Capacitación en diseño y manufactura mecatrónica: ITC TECHNOLOGY</li>
+                <li>Procesamiento de Imágenes 1: Chiptec SAC (2025)</li>
+                <li>Inteligencia Artificial: Chiptec SAC (2025)</li>
+                <li>Especialista en Diseño Web: Universidad Continental Área de Postgrado (Marzo a Junio de 2025)</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Josshua Elias Beltran Loayza | Contacto: jblmecatronica@gmail.com</p>
+    </footer>
+
+</body>
+</html>
